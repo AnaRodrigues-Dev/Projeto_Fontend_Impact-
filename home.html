@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - Impact+</title>
+  <link rel="stylesheet" href="CSS/carousel.css">
+  <link rel="stylesheet" href="CSS/aboutus.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+  <main>
+    <div class="carousel-container">
+      <div class="carousel-wrapper" id="carouselWrapper">
+        
+        <div class="carousel-slide">
+          <img src="imagens/saude.png" alt="Imagem com tema Saúde">
+          <div class="slide-content">
+            <h2>Saúde & Bem estar</h2>
+            <p>Sua doação leva cuidado e tratamento</p>
+          </div>
+        </div>
+
+         <div class="carousel-slide">
+          <img src="imagens/Direitos.png" alt="Imagens com tema Diretos Humanos">
+          <div class="slide-content">
+            <h2>Direitos Humanos & Cidadania</h2>
+            <p>Apoio a causas que defendem igualdade, dignidade e direitos</p>
+          </div>
+        </div>
+
+        <div class="carousel-slide">
+          <img src="imagens/fome.png" alt="Imagem com tema fome">
+          <div class="slide-content">
+            <h2>Combate a fome & Pobreza</h2>
+            <p>Apoie projetos que combatem a fome e garantem dignidade a quem mais precisa.</p>
+          </div>
+        </div>
+
+        <div class="carousel-slide">
+          <img src="imagens/educação.png" alt="Imagem tema Educação">
+          <div class="slide-content">
+            <h2>Educação & Oportunidades</h2>
+            <p>Apoie projetos que transformam vidas através do ensino e abrem portas
+               para um futuro com mais oportunidades</p>
+          </div>
+        </div>
+        
+        <div class="carousel-slide">
+          <img src="imagens/ambiente.png" alt="Imagem com tema Meio AmbienteS">
+          <div class="slide-content">
+            <h2>Meio ambiente & Clima</h2>
+            <p>Apoie iniciativas que protegem a biodiversidade e combatem as mudanças climáticas
+               para garantir o futuro do planeta.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <button class="carousel-btn prev" onclick="changeSlide(-1)">&#10094;</button>
+      <button class="carousel-btn next" onclick="changeSlide(1)">&#10095;</button>
+    </div>
+
+    <div class="carousel-indicators" id="indicators"></div>
+
+    <section class="about-section">
+    <div class="container">
+        
+        <div class="container-aboutus">
+            <div class="header-content">
+                <img src="imagens/Logo impact+.png" alt="Impact Icon" class="impact-icon">
+                <h1 class="section-title">Quem somos nós?</h1>
+            </div>
+
+            <div class="main-text">
+                <p>
+                    Nosso projeto nasceu com um propósito simples, mas poderoso:
+                    <strong>conectar pessoas que querem ajudar a causas que realmente fazem a diferença no mundo.</strong>
+                </p>
+
+                <p>
+                    Somos uma plataforma que reúne ONGs legalizadas e verificadas, atuando em diversas áreas como educação,
+                    saúde, meio ambiente, direitos humanos e assistência social.
+                    <strong>Acreditamos que a solidariedade pode, e deve, caminhar junto com a tecnologia.</strong>
+                </p>
+
+                <p>
+                    Utilizamos o desenvolvimento web para facilitar o acesso à doação, ampliar o alcance das organizações
+                    sociais e incentivar uma cultura de impacto positivo.
+                </p>
+
+                <p>
+                    Nosso projeto também se sustenta por meio de uma loja solidária, onde produtos personalizados ajudam
+                    a financiar a plataforma e ampliar nosso impacto social.
+                </p>
+
+                <p class="final-quote">
+                    Mais do que um site, somos uma ponte entre quem quer ajudar e quem precisa.<br>
+                    <strong>Pequenas ações, quando conectadas, geram grandes transformações.</strong>
+                </p>
+            </div>
+        </div>
+
+        <div class="features-row">
+
+            <div class="feature-item">
+                <i class="fas fa-globe-americas"></i>
+                <p>Conectar pessoas a causas sociais reais, promovendo impacto positivo.</p>
+            </div>
+
+            <div class="feature-item">
+                <i class="fas fa-hands-helping"></i>
+                <p>Facilitar o acesso, doação ou compra contribuindo para mudar vidas.</p>
+            </div>
+
+            <div class="feature-item">
+                <i class="fas fa-network-wired"></i>
+                <p>Usar a tecnologia para transformar solidariedade em ação.</p>
+            </div>
+        </div>
+     </div>
+
+  </section>
+</main>
+  
+  <script src="JS/carousel.js"></script>
+ 
+</body>
+</html>

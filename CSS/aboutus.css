@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+.impact-icon {
+    display: block;
+    width: 270px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.container-aboutus{
+    width: 100%;
+    max-width: 900px;
+    padding: 0.5rem 1rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05),
+                0 6px 6px rgba(0, 0, 0, 0.03);
+    transition: all 0.3s ease;
+}
+
+.container-aboutus:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    border-color: #2e7d32;
+}
+
+.section-title {
+    font-family:'Poppins', 'Segoe UI', Tahoma,  sans-serif;
+    font-size: 2rem;
+    margin: 20px 0;
+    color: #222;
+}
+
+.main-text {
+    font-family:'Poppins', 'Segoe UI', Tahoma,  sans-serif;
+    text-align: justify;
+    margin-bottom: 50px;
+}
+
+.main-text p {
+    font-family:'Poppins', 'Segoe UI', Tahoma,  sans-serif;
+    margin-bottom: 15px;
+    font-size: 1.05rem;
+}
+
+.final-quote {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.features-row {
+    display: flex;
+    justify-content: center; 
+    gap: 30px;
+    flex-wrap: wrap;
+    margin: 50px auto;
+    max-width: 1000px;
+}
+
+/* CAIXINHA INDIVIDUAL */
+.feature-item {
+    background-color: #ffffff;
+    border: 1.5px solid #e0e0e0;
+    border-radius: 20px;
+    padding: 25px 20px;
+    width: 250px;
+    min-height: 200px;
+
+    box-shadow: 
+        0 10px 20px rgba(0, 0, 0, 0.05),
+        0 6px 6px rgba(0, 0, 0, 0.03);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    border-color: #2e7d32;
+}
+
+.feature-item i {
+    font-size: 35px;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.feature-item p {
+    font-size: 0.9rem;
+    color: #444;
+    line-height: 1.4;
+    margin: 0;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .features-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature-item {
+        width: 85%;
+    }
+
+    .main-text {
+        text-align: left;
+    }
+}
