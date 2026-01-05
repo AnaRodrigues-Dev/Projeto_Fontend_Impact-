@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.banner {
+    height: 400px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.banner img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+
+.banner h1 {
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    position: relative;
+    z-index: 3;
+}
+
+.informacoes {
+    padding: 50px 0;
+    background-color: #f5f5f5;
+}
+
+.informacoes h2 {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.informacoes p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+.beneficios {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.card-beneficio {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.icone-beneficio {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.card-beneficio h3 {
+    font-size: 16px;
+    font-weight: normal;
+    color: #333;
+}
+
+.produtos {
+    padding: 50px 0;
+    background-color: white;
+}
+
+.produtos h2 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    letter-spacing: 3px;
+    color: #333;
+}
+
+.lista-produtos {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.card-produto {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+}
+
+.imagem-produto {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.imagem-produto img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.card-produto h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+.preco {
+    font-size: 18px;
+    font-weight: bold;
+    color: #7fba3d;
+    margin-bottom: 15px;
+}
+
+.botao-comprar {
+    background-color: #7fba3d;
+    color: white;
+    border: none;
+    padding: 10px 0;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.botao-comprar:hover {
+    background-color: #6ca332;
+}
+
+.botao-carregar {
+    display: block;
+    margin: 0 auto;
+    background-color: #7fba3d;
+    color: white;
+    border: none;
+    padding: 12px 40px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.botao-carregar:hover {
+    background-color: #6ca332;
+}
+
+@media (min-width: 768px) {
+    .banner h1 {
+        font-size: 42px;
+    }
+
+    .informacoes h2 {
+        font-size: 26px;
+    }
+
+    .beneficios {
+        flex-direction: row;
+    }
+
+    .lista-produtos {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .card-produto {
+        flex: 0 0 calc(50% - 15px);
+    }
+}
+
+@media (min-width: 1024px) {
+    .banner {
+        height: 500px;
+    }
+
+    .banner h1 {
+        font-size: 52px;
+    }
+
+    .informacoes h2 {
+        font-size: 30px;
+    }
+
+    .produtos h2 {
+        font-size: 28px;
+    }
+
+    .card-produto {
+        flex: 0 0 calc(33.333% - 20px);
+    }
+}

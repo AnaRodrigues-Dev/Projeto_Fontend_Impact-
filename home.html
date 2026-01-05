@@ -4,12 +4,178 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home - Impact+</title>
+  <link rel="stylesheet" href="CSS/header.css">
   <link rel="stylesheet" href="CSS/carousel.css">
   <link rel="stylesheet" href="CSS/aboutus.css">
+  <link rel="stylesheet" href="CSS/menu.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
+
+    <header class="header">
+        <div class="header-content">
+            <div class="left-side">
+                <button class="menu-button">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="logo-container">
+                    <a href="home.html">
+                        <img src="imagens/Logo impact+.png" alt="Impact+" class="logo">
+                    </a>
+                </div>
+            </div>
+            <a href="store.html" class="cart-button">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </a>
+        </div>
+    </header>
+
+  <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="user-greeting">
+                <div class="user-avatar">JS</div>
+                <span>Olá, <strong>Usuário</strong></span>
+            </div>
+        </div>
+
+        <nav class="sidebar-nav">
+            <ul>
+                <li><a href="#"><i data-lucide="info"></i> Sobre nós</a></li>
+
+                <li class="has-dropdown">
+                    <button class="dropdown-btn">
+                        <i data-lucide="layers"></i>
+                        Nossas Causas
+                        <i data-lucide="chevron-down" class="chevron"></i>
+                    </button>
+
+                    <ul class="dropdown-container">
+                        <li class="has-dropdown">
+                            <button class="dropdown-btn sub-item">
+                                Combate à Fome
+                                <i data-lucide="chevron-down" class="chevron"></i>
+                            </button>
+                            <ul class="dropdown-container">
+                                <li><a href="#">Centro de Excelência (WFP)</a></li>
+                                <li><a href="#">Global FoodBanking Network</a></li>
+                                <li><a href="#">Ação da Cidadania</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="has-dropdown">
+                            <button class="dropdown-btn sub-item">
+                                Refugiados e Crises
+                                <i data-lucide="chevron-down" class="chevron"></i>
+                            </button>
+                            <ul class="dropdown-container">
+                                <li><a href="#">ACNUR</a></li>
+                                <li><a href="#">IRC</a></li>
+                                <li><a href="#">Mercy Corps</a></li>
+                                <li><a href="#">SOLIDARITÉS INTERNATIONAL</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="has-dropdown">
+                            <button class="dropdown-btn sub-item">
+                                Saúde Global
+                                <i data-lucide="chevron-down" class="chevron"></i>
+                            </button>
+                            <ul class="dropdown-container">
+                                <li><a href="#">Médicos Sem Fronteiras (MSF)</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="has-dropdown">
+                            <button class="dropdown-btn sub-item">
+                                Educação
+                                <i data-lucide="chevron-down" class="chevron"></i>
+                            </button>
+                            <ul class="dropdown-container">
+                                <li><a href="#">Ação Educativa</a></li>
+                                <li><a href="#">Save the Children</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="has-dropdown">
+                            <button class="dropdown-btn sub-item">
+                                Água e Saneamento
+                                <i data-lucide="chevron-down" class="chevron"></i>
+                            </button>
+                            <ul class="dropdown-container">
+                                <li><a href="#">Water.org</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="has-dropdown">
+                            <button class="dropdown-btn sub-item">
+                                Proteção Animal
+                                <i data-lucide="chevron-down" class="chevron"></i>
+                            </button>
+                            <ul class="dropdown-container">
+                                <li><a href="#">UIPA</a></li>
+                                <li><a href="#">Clube dos Vira-Latas</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="has-dropdown">
+                            <button class="dropdown-btn sub-item">
+                                Meio Ambiente
+                                <i data-lucide="chevron-down" class="chevron"></i>
+                            </button>
+                            <ul class="dropdown-container">
+                                <li><a href="#">Greenpeace Brasil</a></li>
+                                <li><a href="#">Iniciativa Verde</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="has-dropdown">
+                            <button class="dropdown-btn sub-item">
+                                Desastres Naturais
+                                <i data-lucide="chevron-down" class="chevron"></i>
+                            </button>
+                            <ul class="dropdown-container">
+                                <li><a href="#">HUMUS</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="has-dropdown">
+                            <button class="dropdown-btn sub-item">
+                                Combate à Pobreza
+                                <i data-lucide="chevron-down" class="chevron"></i>
+                            </button>
+                            <ul class="dropdown-container">
+                                <li><a href="#">BrasilFoundation</a></li>
+                                <li><a href="#">Amigos do Bem</a></li>
+                                <li><a href="#">Zuzu for Africa</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="has-dropdown">
+                            <button class="dropdown-btn sub-item">
+                                Populações Indígenas
+                                <i data-lucide="chevron-down" class="chevron"></i>
+                            </button>
+                            <ul class="dropdown-container">
+                                <li><a href="#">ONG Guanhãnhã</a></li>
+                                <li><a href="#">Instituto Socioambiental (ISA)</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="sidebar-footer">
+            <a href="#"><i data-lucide="mail"></i> Contato</a>
+            <a href="#"><i data-lucide="help-circle"></i> Suporte</a>
+            <a href="#"><i data-lucide="settings"></i> Configurações</a>
+        </div>
+    </aside>
+
+  <div class="overlay" id="overlay"></div>
+
   <main>
     <div class="carousel-container">
       <div class="carousel-wrapper" id="carouselWrapper">
@@ -123,8 +289,18 @@
 
   </section>
 </main>
-  
+
+  <footer class="footer">
+      <div class="footer-content">
+          <p>&copy; 2026 Impact+. Todos os direitos reservados.</p>
+      </div>
+  </footer>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
   <script src="JS/carousel.js"></script>
+  <script src="JS/menu.js"></script>
+  <script src="JS/header.js"></script>
+
  
 </body>
 </html>
