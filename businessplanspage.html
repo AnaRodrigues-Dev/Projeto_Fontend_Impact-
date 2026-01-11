@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planos para Empresas</title>
+    <link rel="stylesheet" href="CSS/businessplanspage.css">
+    <link rel="stylesheet" href="CSS/header.css">
+    <link rel="stylesheet" href="CSS/menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+       <header class="header">
+        <div class="header-content">
+            <div class="left-side">
+                <button class="menu-button">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="logo-container">
+                    <a href="home.html">
+                        <img src="assets/Logo impact+.png" alt="Impact+" class="logo">
+                    </a>
+                </div>
+            </div>
+            <a href="store.html" class="cart-button">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </a>
+        </div>
+    </header>
+
+  <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="user-greeting">
+                <div class="user-avatar">JS</div>
+                <span>Olá, <strong>Usuário</strong></span>
+            </div>
+        </div>
+
+        <nav class="sidebar-nav">
+            <ul>
+                <li><a href="#aboutus"><i data-lucide="info"></i> Sobre nós</a></li>
+
+                <li class="has-dropdown">
+                    <button class="dropdown-btn">
+                        <i data-lucide="layers"></i>
+                        Nossas Causas
+                        <i data-lucide="chevron-down" class="chevron"></i>
+                    </button>
+
+                    <ul class="dropdown-container">
+
+                        <li class="has-dropdown">
+                            <button class="dropdown-btn sub-item">
+                                Direitos Humanos
+                                <i data-lucide="chevron-down" class="chevron"></i>
+                            </button>
+                            <ul class="dropdown-container">
+                                <li><a href="#direitoshumanos">ACNUR</a></li>
+                                <li><a href="#direitoshumanos">IRC</a></li>
+                                <li><a href="#direitoshumanos">Anistia Internacional</a></li> 
+                            </ul>
+                        </li>
+
+                       <li class="has-dropdown">
+                            <button class="dropdown-btn sub-item">
+                                Educação
+                                <i data-lucide="chevron-down" class="chevron"></i>
+                            </button>
+                            <ul class="dropdown-container">
+                                <li><a href="#educacao">Ação Educativa</a></li>
+                                <li><a href="#educacao">Brasil Foundation</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="has-dropdown">
+                            <button class="dropdown-btn sub-item">
+                                Meio Ambiente
+                                <i data-lucide="chevron-down" class="chevron"></i>
+                            </button>
+                            <ul class="dropdown-container">
+                                <li><a href="#meioambiente">Iniciativa Verde</a></li>
+                                <li><a href="#meioambiente">Greenpeace Brasil</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="has-dropdown">
+                            <button class="dropdown-btn sub-item">
+                                Saúde
+                                <i data-lucide="chevron-down" class="chevron"></i>
+                            </button>
+                            <ul class="dropdown-container">
+                                <li><a href="#saude">Em breve</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="has-dropdown">
+                            <button class="dropdown-btn sub-item">
+                                Combate à Fome
+                                <i data-lucide="chevron-down" class="chevron"></i>
+                            </button>
+                            <ul class="dropdown-container">
+                                <li><a href="#combateafome">Em breve</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="sidebar-footer">
+            <a href="#"><i data-lucide="mail"></i> Contato</a>
+            <a href="#"><i data-lucide="help-circle"></i> Suporte</a>
+            <a href="#"><i data-lucide="settings"></i> Configurações</a>
+        </div>
+    </aside>
+
+  <div class="overlay" id="overlay"></div>
+
+    <main class="main">
+        <section class="hero">
+            <img src="assets/Logo impact+.png" class="logo-img">
+            <div class="hero-txt">
+                <h2 class="hero__title">Planos para Empresas</h2>
+                <p class="hero__subtitle">Escolha o plano ideal para o crescimento do seu negócio</p>
+            </div>
+        </section>
+
+        <section id="planos" class="plans">
+            <article class="plan-card">
+                <header class="plan-card__header">
+                    <h3 class="plan-card__title">Plano Impact Apoio</h3>
+                    <p class="plan-card__price">R$ 59,90<span>/mês</span></p>
+                </header>
+                <ul class="plan-card__features">
+                    <li>Logo da empresa na página de apoiadores</li>
+                    <li>Link para o site da empresa</li>
+                    <li>Selo “Empresa Apoiadora Impact+”</li>
+                    <li>Destaque simples (logo em tamanho padrão)</li>
+                    <li>Apoio a até 1 causa/ONG</li>
+                </ul>
+                <button class="plan-card__button">Contratar</button>
+            </article>
+
+            <article class="plan-card">
+                <div class="plan-card__badge">Mais Popular</div>
+                <header class="plan-card__header">
+                    <h3 class="plan-card__title">Plano Impact Parceira</h3>
+                    <p class="plan-card__price">R$ 99.90<span>/mês</span></p>
+                </header>
+                <ul class="plan-card__features">
+                    <li>Tudo do plano Impact Apoio</li>
+                    <li>Logo em destaque médio</li>
+                    <li>Página dedicada da empresa como apoiadora</li>
+                    <li>Apoio a até 3 causas/ONGs</li>
+                    <li>Texto institucional sobre o impacto social da empresa</li>
+                    <li>Destaque em seções estratégicas do site</li>
+                </ul>
+                <button class="plan-card__button">Contratar</button>
+            </article>
+
+            <article class="plan-card">
+                <header class="plan-card__header">
+                    <h3 class="plan-card__title">Plano Impact Líder</h3>
+                    <p class="plan-card__price">149,90<span>/mês</span></p>
+                </header>
+                <ul class="plan-card__features">
+                    <li>Tudo do plano Impact Parceira</li>
+                    <li>Logo em destaque máximo (topo / home)</li>
+                    <li>Selo “Empresa Líder de Impacto”</li>
+                    <li>Página exclusiva com storytelling da empresa + causas</li>
+                    <li>Apoio a causas ilimitadas</li>
+                    <li>Destaque em campanhas especiais</li>
+                    <li>Relatórios de visibilidade (views, cliques, engajamento)</li>
+                </ul>
+                <button class="plan-card__button">Contratar</button>
+            </article>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2026 Impact+. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="JS/businessplanspage.js"></script>
+    <script src="JS/menu.js"></script>
+    <script src="JS/header.js"></script>
+</body>
+</html>
