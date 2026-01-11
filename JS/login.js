@@ -29,7 +29,6 @@ function handleLogin() {
   messageDiv.textContent = `Login realizado com sucesso!`;
   messageDiv.classList.add('success');
   
-  // Aguarda 1 segundo e redireciona
   setTimeout(() => {
     window.location.href = 'home.html';
   }, 1000);

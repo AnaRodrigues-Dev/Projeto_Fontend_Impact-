@@ -21,9 +21,11 @@
     }
 
     .logo{
-        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         max-width: 250px;
-        margin: 0;
+        margin: 0.5rem;
     }
 
     section {
@@ -103,7 +105,7 @@
     }
 
     .toggle-password:hover {
-      color: #6E8637;
+      color: #17AF26;
     }
 
     .options {
@@ -124,7 +126,7 @@
     }
 
     .forgot-password {
-      color: #6E8637;
+      color: #17AF26;
       text-decoration: none;
     }
 
@@ -135,7 +137,7 @@
     .btn-login {
       width: 100%;
       padding: 0.875rem;
-      background-color: #6E8637;
+      background-color: #17AF26;
       color: white;
       border: none;
       border-radius: 4px;
@@ -146,7 +148,7 @@
     }
 
     .btn-login:hover {
-      background-color: #6E8637;
+      background-color: #17AF26;
     }
 
     .message {
@@ -180,7 +182,7 @@
     }
 
     footer a {
-      color: #6E8637;
+      color: #17AF26;
       text-decoration: none;
       font-weight: 500;
     }

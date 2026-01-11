@@ -82,7 +82,7 @@ input[type="tel"] {
 
 input:focus {
   outline: none;
-  border-color: #6E8637;
+  border-color: #17AF26;
 }
 
 .password-wrapper {
@@ -106,7 +106,7 @@ input:focus {
 
 .toggle-password:hover,
 .toggle-confirm-password:hover {
-  color: #6E8637;
+  color: #17AF26;
 }
 
 .terms {
@@ -128,7 +128,7 @@ input:focus {
 }
 
 .terms-link {
-  color: #6E8637;
+  color: #17AF26;
   text-decoration: none;
 }
 
@@ -139,7 +139,7 @@ input:focus {
 .btn-cadastro {
   width: 100%;
   padding: 0.875rem;
-  background-color: #6E8637;
+  background-color: #17AF26;
   color: white;
   border: none;
   border-radius: 4px;
@@ -150,7 +150,7 @@ input:focus {
 }
 
 .btn-cadastro:hover {
-  background-color: #5a6e2d;
+  background-color: #17AF26;
 }
 
 .message {
@@ -184,7 +184,7 @@ footer {
 }
 
 footer a {
-  color: #6E8637;
+  color: #17AF26;
   text-decoration: none;
   font-weight: 500;
 }

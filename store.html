@@ -11,7 +11,7 @@
 </head>
 <body>
 
-     <header class="header">
+    <header class="header">
         <div class="header-content">
             <div class="left-side">
                 <button class="menu-button">
@@ -19,7 +19,7 @@
                 </button>
                 <div class="logo-container">
                     <a href="home.html">
-                        <img src="imagens/Logo impact+.png" alt="Impact+" class="logo">
+                        <img src="assets/Logo impact+.png" alt="Impact+" class="logo">
                     </a>
                 </div>
             </div>
@@ -29,11 +29,18 @@
             </a>
         </div>
     </header>
-    
-    <aside class="sidebar">
+
+  <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="user-greeting">
+                <div class="user-avatar">JS</div>
+                <span>Olá, <strong>Usuário</strong></span>
+            </div>
+        </div>
+
         <nav class="sidebar-nav">
             <ul>
-                <li><a href="#"><i data-lucide="info"></i> Sobre nós</a></li>
+                <li><a href="#aboutus"><i data-lucide="info"></i> Sobre nós</a></li>
 
                 <li class="has-dropdown">
                     <button class="dropdown-btn">
@@ -43,70 +50,27 @@
                     </button>
 
                     <ul class="dropdown-container">
-                        <li class="has-dropdown">
-                            <button class="dropdown-btn sub-item">
-                                Combate à Fome
-                                <i data-lucide="chevron-down" class="chevron"></i>
-                            </button>
-                            <ul class="dropdown-container">
-                                <li><a href="#">Centro de Excelência (WFP)</a></li>
-                                <li><a href="#">Global FoodBanking Network</a></li>
-                                <li><a href="#">Ação da Cidadania</a></li>
-                            </ul>
-                        </li>
 
                         <li class="has-dropdown">
                             <button class="dropdown-btn sub-item">
-                                Refugiados e Crises
+                                Direitos Humanos
                                 <i data-lucide="chevron-down" class="chevron"></i>
                             </button>
                             <ul class="dropdown-container">
-                                <li><a href="#">ACNUR</a></li>
-                                <li><a href="#">IRC</a></li>
-                                <li><a href="#">Mercy Corps</a></li>
-                                <li><a href="#">SOLIDARITÉS INTERNATIONAL</a></li>
+                                <li><a href="#direitoshumanos">ACNUR</a></li>
+                                <li><a href="#direitoshumanos">IRC</a></li>
+                                <li><a href="#direitoshumanos">Anistia Internacional</a></li> 
                             </ul>
                         </li>
 
-                        <li class="has-dropdown">
-                            <button class="dropdown-btn sub-item">
-                                Saúde Global
-                                <i data-lucide="chevron-down" class="chevron"></i>
-                            </button>
-                            <ul class="dropdown-container">
-                                <li><a href="#">Médicos Sem Fronteiras (MSF)</a></li>
-                            </ul>
-                        </li>
-
-                        <li class="has-dropdown">
+                       <li class="has-dropdown">
                             <button class="dropdown-btn sub-item">
                                 Educação
                                 <i data-lucide="chevron-down" class="chevron"></i>
                             </button>
                             <ul class="dropdown-container">
-                                <li><a href="#">Ação Educativa</a></li>
-                                <li><a href="#">Save the Children</a></li>
-                            </ul>
-                        </li>
-
-                        <li class="has-dropdown">
-                            <button class="dropdown-btn sub-item">
-                                Água e Saneamento
-                                <i data-lucide="chevron-down" class="chevron"></i>
-                            </button>
-                            <ul class="dropdown-container">
-                                <li><a href="#">Water.org</a></li>
-                            </ul>
-                        </li>
-
-                        <li class="has-dropdown">
-                            <button class="dropdown-btn sub-item">
-                                Proteção Animal
-                                <i data-lucide="chevron-down" class="chevron"></i>
-                            </button>
-                            <ul class="dropdown-container">
-                                <li><a href="#">UIPA</a></li>
-                                <li><a href="#">Clube dos Vira-Latas</a></li>
+                                <li><a href="#educacao">Ação Educativa</a></li>
+                                <li><a href="#educacao">Brasil Foundation</a></li>
                             </ul>
                         </li>
 
@@ -116,43 +80,31 @@
                                 <i data-lucide="chevron-down" class="chevron"></i>
                             </button>
                             <ul class="dropdown-container">
-                                <li><a href="#">Greenpeace Brasil</a></li>
-                                <li><a href="#">Iniciativa Verde</a></li>
+                                <li><a href="#meioambiente">Iniciativa Verde</a></li>
+                                <li><a href="#meioambiente">Greenpeace Brasil</a></li>
                             </ul>
                         </li>
 
                         <li class="has-dropdown">
                             <button class="dropdown-btn sub-item">
-                                Desastres Naturais
+                                Saúde
                                 <i data-lucide="chevron-down" class="chevron"></i>
                             </button>
                             <ul class="dropdown-container">
-                                <li><a href="#">HUMUS</a></li>
+                                <li><a href="#saude">Em breve</a></li>
                             </ul>
                         </li>
 
                         <li class="has-dropdown">
                             <button class="dropdown-btn sub-item">
-                                Combate à Pobreza
+                                Combate à Fome
                                 <i data-lucide="chevron-down" class="chevron"></i>
                             </button>
                             <ul class="dropdown-container">
-                                <li><a href="#">BrasilFoundation</a></li>
-                                <li><a href="#">Amigos do Bem</a></li>
-                                <li><a href="#">Zuzu for Africa</a></li>
+                                <li><a href="#combateafome">Em breve</a></li>
                             </ul>
                         </li>
 
-                        <li class="has-dropdown">
-                            <button class="dropdown-btn sub-item">
-                                Populações Indígenas
-                                <i data-lucide="chevron-down" class="chevron"></i>
-                            </button>
-                            <ul class="dropdown-container">
-                                <li><a href="#">ONG Guanhãnhã</a></li>
-                                <li><a href="#">Instituto Socioambiental (ISA)</a></li>
-                            </ul>
-                        </li>
                     </ul>
                 </li>
             </ul>
@@ -164,13 +116,13 @@
             <a href="#"><i data-lucide="settings"></i> Configurações</a>
         </div>
     </aside>
-    
-    <div class="overlay" id="overlay"></div>
-      
+
+  <div class="overlay" id="overlay"></div>
+
     <main>
 
         <section class="banner">
-            <img src="imagens/educação.png" alt="Garota africana sorrindo">
+            <img src="assets/educação.png" alt="Garota africana sorrindo">
             <h1>Produtos que impactam +</h1>
         </section>
 
@@ -208,7 +160,7 @@
                 <div class="lista-produtos">
                     <article class="card-produto">
                         <div class="imagem-produto">
-                            <img src="imagens/caderno.jpg" alt="Caderno Impact+">
+                            <img src="assets/caderno.jpg" alt="Caderno Impact+">
                         </div>
                         <h3>Caderno Impact+</h3>
                         <p class="preco">R$ 14,90</p>
@@ -217,7 +169,7 @@
 
                     <article class="card-produto">
                         <div class="imagem-produto">
-                            <img src="imagens/camisa.jpg" alt="Camisa Impact+">
+                            <img src="assets/camisa.jpg" alt="Camisa Impact+">
                         </div>
                         <h3>Camisa Impact+</h3>
                         <p class="preco">R$ 24,90</p>
@@ -226,7 +178,7 @@
 
                     <article class="card-produto">
                         <div class="imagem-produto">
-                            <img src="imagens/garrafa.jpg" alt="Garrafa Termica Impact+">
+                            <img src="assets/garrafa.jpg" alt="Garrafa Termica Impact+">
                         </div>
                         <h3>Garrafa Termica Impact+</h3>
                         <p class="preco">R$ 18,90</p>
@@ -235,7 +187,7 @@
 
                     <article class="card-produto">
                         <div class="imagem-produto">
-                            <img src="imagens/caneca.jpg" alt="Caneca Impact+">
+                            <img src="assets/caneca.jpg" alt="Caneca Impact+">
                         </div>
                         <h3>Caneca Impact+</h3>
                         <p class="preco">R$ 9,90</p>
