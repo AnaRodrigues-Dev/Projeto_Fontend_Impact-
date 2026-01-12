@@ -21,8 +21,12 @@ html, body {
 
 .direitos-humanos,
 .meioambiente,
-.educacao {
+.educacao,
+.saude,
+.combate-fome {
     padding-bottom: 2rem;
+    width: 100%;
+    margin: 0;
 }
 
 .fundo-claro {

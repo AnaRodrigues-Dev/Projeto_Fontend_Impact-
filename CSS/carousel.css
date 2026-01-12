@@ -19,7 +19,7 @@
     .carousel-container {
       position: relative;
       width: 100%;
-      max-width: 1024x;
+      max-width: 1270px;
       margin: 2rem auto;
       overflow: hidden;
       border-radius: 12px;
@@ -62,7 +62,6 @@
       font-size: 0.875rem;
     }
 
-    /* Botões de navegação */
     .carousel-btn {
       position: absolute;
       top: 50%;
@@ -94,7 +93,6 @@
       right: 1rem;
     }
 
-    /* Indicadores */
     .carousel-indicators {
       display: flex;
       justify-content: center;
