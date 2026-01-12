@@ -218,7 +218,7 @@ body {
         display: flex;
         flex-direction: initial;
         justify-content: flex-start;
-        gap: clamp(7.5rem, 3vw, 15.5rem);
+        gap: clamp(12.5rem, 3vw, 16.5rem);
         padding: 1.5rem 3rem;
     }
 
@@ -235,7 +235,7 @@ body {
         flex: 1;
     }
     .logo-img {
-        width: 150px;
-        height: 150px;
+        width: 125px;
+        height: 125px;
     }
 }
