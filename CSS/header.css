@@ -29,6 +29,13 @@ body {
     z-index: 1000;
 }
 
+#header-menu {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .header-content {
     display: flex;
     align-items: center;
@@ -143,6 +150,7 @@ body {
     }
 }
 
+/* ✅ DESKTOP - Mostra menu integrado, esconde botão lateral */
 @media (min-width: 769px) {
     .header-content {
         padding: 10px 30px;
@@ -150,5 +158,22 @@ body {
     
     .left-side {
         gap: 15px;
+    }
+   
+    #header-menu {
+        display: flex; 
+    }
+
+    .menu-button {
+        display: none; 
+    }
+}
+@media (max-width: 768px) {
+    #header-menu {
+        display: none;
+    }
+
+    .menu-button {
+        display: flex; 
     }
 }
