@@ -9,9 +9,8 @@ toggleBtn.addEventListener('click', () => {
 });
 
 function handleLogin() {
-  const email = document.getElementById('email').value.trim();
+  const email = document.getElementById('email').value;
   const password = document.getElementById('password').value;
-  const btnLogin = document.querySelector('button[onclick="handleLogin()"]');
 
   messageDiv.classList.remove('hidden', 'success', 'error');
 
@@ -27,25 +26,7 @@ function handleLogin() {
     return;
   }
 
-  const nomeUsuario = localStorage.getItem('nomeUsuario') || email.split('@')[0];
-  const emailCadastrado = localStorage.getItem('emailUsuario');
-
-  if (emailCadastrado && emailCadastrado !== email) {
-    messageDiv.textContent = 'Email ou senha incorretos.';
-    messageDiv.classList.add('error');
-    return;
-  }
-
-  localStorage.setItem('nomeUsuario', nomeUsuario);
-  localStorage.setItem('emailUsuario', email);
-  
-  if (btnLogin) {
-    btnLogin.disabled = true;
-    btnLogin.textContent = 'Entrando...';
-    btnLogin.style.opacity = '0.7';
-  }
-
-  messageDiv.textContent = 'Login realizado com sucesso!';
+  messageDiv.textContent = `Login realizado com sucesso!`;
   messageDiv.classList.add('success');
   
   setTimeout(() => {

@@ -35,7 +35,6 @@ function handleCadastro() {
   const password = document.getElementById('password').value;
   const confirmPassword = document.getElementById('confirm-password').value;
   const termsAccepted = document.getElementById('terms').checked;
-  const btnCadastro = document.querySelector('button[onclick="handleCadastro()"]');
 
   messageDiv.classList.remove('hidden', 'success', 'error');
 
@@ -67,16 +66,6 @@ function handleCadastro() {
     messageDiv.textContent = 'Você deve aceitar os termos e condições.';
     messageDiv.classList.add('error');
     return;
-  }
-
-  localStorage.setItem('nomeUsuario', nome);
-  localStorage.setItem('emailUsuario', email);
-  localStorage.setItem('telefoneUsuario', telefone);
-
-  if (btnCadastro) {
-    btnCadastro.disabled = true;
-    btnCadastro.textContent = 'Cadastrando...';
-    btnCadastro.style.opacity = '0.7';
   }
 
   messageDiv.textContent = `Cadastro realizado com sucesso! Bem-vindo(a), ${nome}!`;

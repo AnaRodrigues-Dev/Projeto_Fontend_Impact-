@@ -31,17 +31,6 @@ dropdownBtns.forEach(btn => {
     });
 });
 
-function logout() {
-    if (confirm('Deseja realmente sair?')) {
-        localStorage.removeItem('nomeUsuario');
-        localStorage.removeItem('emailUsuario');
-        localStorage.removeItem('telefoneUsuario');
-        window.location.href = 'login.html';
-    }
-}
-
-window.logout = logout;
-
 document.addEventListener('DOMContentLoaded', () => {
     dropdownBtns.forEach(btn => {
         const content = btn.nextElementSibling;
@@ -51,18 +40,5 @@ document.addEventListener('DOMContentLoaded', () => {
     
     if (typeof lucide !== 'undefined') {
         lucide.createIcons();
-    }
-    
-    const nomeUsuario = localStorage.getItem('nomeUsuario');
-    const userGreeting = document.querySelector('.user-greeting strong');
-    
-    if (nomeUsuario && userGreeting) {
-        userGreeting.textContent = nomeUsuario;
-    }
-    
-    const userAvatar = document.querySelector('.user-avatar');
-    if (nomeUsuario && userAvatar) {
-        const iniciais = nomeUsuario.substring(0, 2).toUpperCase();
-        userAvatar.textContent = iniciais;
     }
 });
