@@ -27,4 +27,11 @@ window.onclick = (event) => {
     if (event.target == modal) {
         modal.style.display = "none";
     }
+    
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal.style.display === 'block') {
+        modal.style.display = 'none';
+    }
+});
+
 };

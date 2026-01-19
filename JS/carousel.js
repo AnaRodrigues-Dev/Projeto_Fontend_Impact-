@@ -5,7 +5,6 @@
     const totalSlides = slides.length;
     let autoPlayInterval;
 
-    // Cria os indicadores
     function createIndicators() {
       for (let i = 0; i < totalSlides; i++) {
         const indicator = document.createElement('div');
@@ -16,7 +15,6 @@
       }
     }
 
-    // Atualiza os indicadores
     function updateIndicators() {
       const indicators = document.querySelectorAll('.indicator');
       indicators.forEach((indicator, index) => {
@@ -24,7 +22,6 @@
       });
     }
 
-    // Mudar slide
     function changeSlide(direction) {
       currentSlide += direction;
 
@@ -38,14 +35,12 @@
       resetAutoPlay();
     }
 
-    // Ir para slide específico
     function goToSlide(index) {
       currentSlide = index;
       updateCarousel();
       resetAutoPlay();
     }
 
-    // Atualizar carrossel
     function updateCarousel() {
       const offset = -currentSlide * 100;
       wrapper.style.transform = `translateX(${offset}%)`;
@@ -59,17 +54,14 @@
       }, 10000); // 10 segundos
     }
 
-    // Resetar auto play
     function resetAutoPlay() {
       clearInterval(autoPlayInterval);
       startAutoPlay();
     }
 
-    // Inicializar
     createIndicators();
     startAutoPlay();
 
-    // Pausar ao passar mouse
     const carouselContainer = document.querySelector('.carousel-container');
     carouselContainer.addEventListener('mouseenter', () => {
       clearInterval(autoPlayInterval);
@@ -79,7 +71,6 @@
       startAutoPlay();
     });
 
-    // Suporte para toque (mobile)
     let touchStartX = 0;
     let touchEndX = 0;
 

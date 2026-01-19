@@ -1,18 +1,14 @@
-// Espera a página carregar
 document.addEventListener('DOMContentLoaded', function() {
     
-    // Pega os botões de comprar
     const botoesComprar = document.querySelectorAll('.botao-comprar');
     const botaoCarregar = document.querySelector('.botao-carregar');
     
-    // Adiciona função de comprar em cada botão
     botoesComprar.forEach(function(botao) {
         botao.addEventListener('click', function() {
             mostrarMensagem('Produto adicionado ao carrinho!');
         });
     });
 
-    // Função que mostra mensagem na tela
     function mostrarMensagem(texto) {
         const mensagem = document.createElement('div');
         mensagem.textContent = texto;
@@ -35,14 +31,12 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 2000);
     }
 
-    // Função do botão carregar mais produtos
     if (botaoCarregar) {
         botaoCarregar.addEventListener('click', function() {
             carregarMaisProdutos();
         });
     }
 
-    // Carrega mais produtos na página
     function carregarMaisProdutos() {
         const listaProdutos = document.querySelector('.lista-produtos');
         
@@ -54,7 +48,6 @@ document.addEventListener('DOMContentLoaded', function() {
         mostrarMensagem('Mais produtos carregados!');
     }
 
-    // Cria um novo card de produto
     function criarProduto() {
         const article = document.createElement('article');
         article.className = 'card-produto';
