@@ -1,12 +1,21 @@
- const trilho = document.querySelector('.cards-inner');
-        const cards = document.querySelectorAll('.card');
-        const btnPrev = document.querySelector('.seta-prev');
-        const btnNext = document.querySelector('.seta-next');
-        let index = 0;
+ function inicializarCarrossel(secaoId) {
+    const secao = document.getElementById(secaoId);
+    if (!secao) return;
+
+    const trilho = secao.querySelector('.cards-inner');
+    const cards = secao.querySelectorAll('.card');
+    const btnPrev = secao.querySelector('.seta-prev');
+    const btnNext = secao.querySelector('.seta-next');
+
+    let index = 0;
+
 
         function atualizarCarrossel() {
-            const larguraJanela = window.innerWidth;
-            if (larguraJanela < 1024) {
+            if (window.innerWidth < 1024) {
+
+                if (index >= cards.length) index = 0;
+                if (index < 0) index = cards.length - 1;
+                
                 const deslocamento = index * 100;
                 trilho.style.transform = `translateX(-${deslocamento}%)`;
             } else {
@@ -14,20 +23,26 @@
             }
         }
 
+        
+        if (btnNext) {
         btnNext.addEventListener('click', () => {
-            if (index < cards.length - 1) {
-                index++;
-            } else {
-                index = 0;
-            }
+            index++;
             atualizarCarrossel();
         });
-
+    }
+         
+        if (btnPrev) {
         btnPrev.addEventListener('click', () => {
-            if (index > 0) {
-                index--;
-            } else {
-                index = cards.length - 1;
-            }
+            index--;
             atualizarCarrossel();
         });
+    }
+         window.addEventListener('resize', atualizarCarrossel);
+}
+
+inicializarCarrossel('direitoshumanos')
+inicializarCarrossel('meioambiente')
+inicializarCarrossel('educacao')
+inicializarCarrossel('saude')
+inicializarCarrossel('combateafome')
+     
