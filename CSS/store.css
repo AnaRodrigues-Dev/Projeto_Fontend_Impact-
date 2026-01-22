@@ -70,37 +70,45 @@ body {
 
 .informacoes p {
     text-align: center;
-    color: #666;
-    margin-bottom: 40px;
+    color: #3d3d3d;
+    margin-bottom: 4.5rem;
     line-height: 1.6;
+    font-weight: 500;
 }
 
 .beneficios {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    max-width: 900px;
+    gap: 3.5rem;
+    max-width: 1400px;
     margin: 0 auto;
 }
 
 .card-beneficio {
     background: white;
-    padding: 30px;
+    padding: 1rem ;
     border-radius: 10px;
     text-align: center;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1; 
+    max-height: 16rem;
+    
 }
 
 .icone-beneficio {
     font-size: 50px;
-    margin-bottom: 15px;
+    align-items: center;
 }
 
 .card-beneficio h3 {
-    font-size: 16px;
-    font-weight: normal;
+    font-size: clamp(1.5rem, 2vw, 3.5rem);
+    font-weight: 600;
     color: #333;
 }
+
 
 .produtos {
     padding: 50px 0;
@@ -224,7 +232,10 @@ body {
     }
 
     .informacoes h2 {
-        font-size: 30px;
+        font-size: 2.5rem;
+    }
+    .informacoes p{
+        font-size: 1.325rem;
     }
 
     .produtos h2 {

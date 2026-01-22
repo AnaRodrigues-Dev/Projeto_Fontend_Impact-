@@ -7,55 +7,51 @@
   <link rel="stylesheet" href="CSS/header.css">
   <link rel="stylesheet" href="CSS/carousel.css">
   <link rel="stylesheet" href="CSS/aboutus.css">
-  <link rel="stylesheet" href="CSS/menu.css">
   <link rel="stylesheet" href="CSS/geralsections.css">
-  <link rel="stylesheet" href="CSS/menu-integration.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
+   <div class="overlay" id="overlay"></div>
 
-    <header class="header">
+ <header class="header">
         <div class="header-content">
             <div class="left-side">
-                <button class="menu-button">
+                <button class="menu-button" aria-label="Menu">
                     <i class="fas fa-bars"></i>
                 </button>
-                <div class="logo-container">
+                <div class="logoh-container">
                     <a href="home.html">
                         <img src="assets/Logo impact+.png" alt="Impact+" class="logo">
                     </a>
                 </div>
             </div>
 
-           <div id="header-menu"></div>
+            <nav id="header-menu" aria-label="Menu principal">
+                <ul>
+                    <li class="has-dropdown">
+                        <a href="#causes">Nossas Causas</a>
+                        <ul class="header-dropdown">
+                            <li><a href="#direitoshumanos">Direitos Humanos</a></li>
+                            <li><a href="#educacao">Educação</a></li>
+                            <li><a href="#meioambiente">Meio Ambiente</a></li>
+                            <li><a href="#saude">Saúde</a></li>
+                            <li><a href="#combateafome">Combate à Fome</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="businessplanspage.html">Planos para Empresas</a></li>
+                    <li><a href="ongsplanspage.html">Planos para ONGs</a></li>
+                </ul>
+            </nav>
 
-            <a href="store.html" class="cart-button">
+            <a href="store.html" class="cart-button" aria-label="Carrinho de compras">
                 <i class="fas fa-shopping-cart"></i>
                 <span class="cart-count">0</span>
             </a>
         </div>
     </header>
 
-    <div id="menu-container" style="display: none;">
-    <ul>
-        <li><a href="#aboutus">Sobre nós</a></li>
-        <li>
-            <a href="#">Nossas Causas</a>
-            <ul>
-                <li><a href="#direitoshumanos">Direitos Humanos</a></li>
-                <li><a href="#educacao">Educação</a></li>
-                <li><a href="#meioambiente">Meio Ambiente</a></li>
-                <li><a href="#saude">Saúde</a></li>
-                <li><a href="#combateafome">Combate à Fome</a></li>
-            </ul>
-        </li>
-        <li><a href="businessplanspage.html">Planos para Empresas</a></li>
-        <li><a href="ongsplanspage.html">Planos para ONGs</a></li>
-    </ul>
-</div>
-
-  <aside class="sidebar" id="sidebar">
+    <aside class="sidebar" id="sidebar">
         <div class="sidebar-header">
             <div class="user-greeting">
                 <div class="user-avatar">JS</div>
@@ -75,7 +71,6 @@
                     </button>
 
                     <ul class="dropdown-container">
-
                         <li class="has-dropdown">
                             <button class="dropdown-btn sub-item">
                                 Direitos Humanos
@@ -88,7 +83,7 @@
                             </ul>
                         </li>
 
-                       <li class="has-dropdown">
+                        <li class="has-dropdown">
                             <button class="dropdown-btn sub-item">
                                 Educação
                                 <i data-lucide="chevron-down" class="chevron"></i>
@@ -129,13 +124,11 @@
                                 <li><a href="#combateafome">Em breve</a></li>
                             </ul>
                         </li>
-
                     </ul>
                 </li>
 
                 <li><a href="businessplanspage.html"><i data-lucide="briefcase"></i> Planos para Empresas</a></li>
-
-                <li><a href="ongsplanspage.html"><i data-lucide="briefcase"></i> Planos para Ongs</a></li>
+                <li><a href="ongsplanspage.html"><i data-lucide="briefcase"></i> Planos para ONGs</a></li>
             </ul>
         </nav>
 
@@ -144,12 +137,10 @@
             <a href="#"><i data-lucide="help-circle"></i> Suporte</a>
             <a href="#"><i data-lucide="settings"></i> Configurações</a>
         </div>
-    </aside>
-
-  <div class="overlay" id="overlay"></div>
+  </aside>
 
   <main>
-    <div class="carousel-container">
+    <div class="carousel-container fundo-escuro">
       <div class="carousel-wrapper" id="carouselWrapper">
         
         <div class="carousel-slide">
@@ -202,16 +193,17 @@
 
     <div class="carousel-indicators" id="indicators"></div>
 
-    <section class="about-section" id="aboutus">
+    <!-- SEÇÃO SOBRE NÓS -->
+    <section class="about-section fundo-claro" id="aboutus">
     <div class="container">
         
         <div class="container-aboutus">
             <div class="logo-title">
                 <img src="assets/Logo impact+.png" alt="Impact Icon" class="impact-icon">
-                <h1 class="section-title">Quem somos nós?</h1>
             </div>
 
             <div class="main-text">
+                <h1 class="section-title">Quem somos nós?</h1>
                 <p>
                     Nosso projeto nasceu com um propósito simples, mas poderoso:
                     <strong>conectar pessoas que querem ajudar a causas que realmente fazem a diferença no mundo.</strong>
@@ -602,9 +594,7 @@
   </footer>
 
   <script src="https://unpkg.com/lucide@latest"></script>
-  <script src="JS/menu-integration.js"></script>
   <script src="JS/carousel.js"></script>
-  <script src="JS/menu.js"></script>
   <script src="JS/header.js"></script>
   <script src="JS/carousel-cards.js"></script>
   <script src="JS/modal.js"></script>
